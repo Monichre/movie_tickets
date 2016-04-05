@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <title>Movies</title>
+</head>
+<body>
+
+  <div class="container cf">
+    <header>
+      <h1>Landmark Theaters</h1>
+    </header>
+    <form id="movies" class="cf">
+      <div class="movie">                     <!--MOVIE ONE -->
+        <img src="images/starwars.jpg">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="starwars">
+            StarWars: Return of the Jedi<span class="release" value = "old">old</span>
+          </label>
+        </div>
+        <fieldset class="form-group">
+          <label for="timeSelect1">Time</label>
+          <select class="form-control starwars">
+            <option value ='1'>1:00pm</option>
+            <option value ='3'>3:30pm</option>
+            <option value ='7'>7:00pm</option>
+
+          </select>
+        </fieldset>
+      </div>
+      <div class="movie"><!--MOVIE 2 -->
+        <img src="images/birdman.jpg">
+        <div class="radio">
+          <span class="release" value = "new">new</span>
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="birdman">
+            Birdman
+          </label>
+        </div>
+        <fieldset class="form-group">
+          <label for="timeSelect2">Time</label>
+          <select class="form-control birdman">
+            <option value ='1'>1:00pm</option>
+            <option value ='3'>3:30pm</option>
+            <option value ='7'>7:00pm</option>
+
+          </select>
+        </fieldset>
+      </div>
+      <div class="movie">
+        <img src="images/drive.jpg">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="drive">
+            Drive<span class="release" value = "new">new</span>
+          </label>
+        </div>
+        <fieldset class="form-group">
+          <label for="timeSelect3">Time</label>
+          <select class="form-control drive">
+            <option value ='1'>1:00pm</option>
+            <option value ='3'>3:30pm</option>
+            <option value ='7'>7:00pm</option>
+          </select>
+        </fieldset>
+      </div>
+      <div class="movie">
+        <img src="images/birds.jpg">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios4" value="birds">
+            Birds<span class="release" value = "old">old</span>
+          </label>
+        </div>
+        <fieldset class="form-group">
+          <label for="timeSelect4">Time</label>
+          <select class="form-control birds">
+            <option value ='1'>1:00pm</option>
+            <option value ='3'>3:30pm</option>
+            <option value ='7'>7:00pm</option>
+
+          </select>
+        </fieldset>
+      </div>
+
+      <!--end of MOVIE ID  ************************************************** -->
+
+
+      <div id="user" class="cf">
+
+        <fieldset class="form-group">
+          <label for="exampleSelect1">Age select</label>
+          <select class="form-control1" id="Age">
+            <option value ='Junior'>Junior (12 or under)</option>
+            <option value ='Adult' selected="">Adult</option>
+            <option value ='Senior'>Senior (60+)</option>
+          </select>
+        </fieldset>
+
+      </div>
+      <button type="submit" class="btn btn-primary">Get tickets</button>
+    </form>
+
+    <div class="show-result">
+      <h2>Total</h2>
+    </div>
+  </div><!--end of container -->
+  <!-- Javascript -->
+  <script src="js/jquery-1.12.0.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
