@@ -32,16 +32,17 @@ Movie.prototype.addPrice = function(){
       var age = $('#Age').val();
       var movie = $(this).find('.radio :checked').val();
       var time = $("." + movie).val();
-
       var movieInfo = new Movie(movie, age, time);
 
       ticket.push(movieInfo.addPrice());
       console.log(ticket);
 
-      // ticket.forEach(function(ticket) {
-      //   return total += ticket;
-      // });
-
+      ticket.forEach(function(ticket) {
+        
+        return total += ticket;
+      });
+      $("#show-result").show();
+      $(".result").text(" Thanks your total is: " + total)
 
     });
   });
